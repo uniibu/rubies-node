@@ -1,15 +1,23 @@
-The API is equivalent to the API document [here](https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_Calls_list).
+
+## This is not a full Rubies client. This is just a nodejs module that you can use to connect your nodejs apps to a running rubiesd daemon via JSON-RPC.
+The API is equivalent to the API document [here](https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_Calls_list), with some exceptions. Check your rubies client for additional API calls.
+
 The methods are exposed as lower camelcase methods on the `rubies.Client`
 object, or you may call the API directly using the `cmd` method.
 
+### Install
+```
+clone this repo, then just run
+npm install
+```
 ## Examples
 
 ### Create client
 ```js
 // all config options are optional
-var client = new bitcoin.Client({
+var client = new rubies.Client({
   host: 'localhost',
-  port: 8332,
+  port: 8423,
   user: 'username',
   pass: 'password',
   timeout: 30000
@@ -73,3 +81,4 @@ var client = new rubies.Client({
   sslCa: fs.readFileSync(__dirname + '/myca.cert')
 });
 ```
+## This is a fork of the original node-bitcoin. https://github.com/freewil/node-bitcoin
