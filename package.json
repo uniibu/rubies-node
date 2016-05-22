@@ -1,0 +1,37 @@
+{
+  "name": "rubies-node",
+  "description": "Communicate with bitcoind via JSON-RPC",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "keywords": [
+    "rubies",
+    "rpc"
+  ],
+  "author": "<unibtc@gmail.com>",
+  "dependencies": {},
+  "devDependencies": {
+    "clone": "^1.0.2",
+    "mocha": "^2.3.3",
+    "standard": "^5.3.1"
+  },
+  "optionalDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/uniibu/rubies-node.git"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "pretest": "standard --verbose",
+    "test": "make test"
+  },
+  "bugs": {
+    "url": "https://github.com/uniibu/rubies-node/issues"
+  },
+  "homepage": "https://github.com/uniibu/rubies-node#readme",
+  "directories": {
+    "test": "test"
+  },
+  "license": "MIT"
+}
